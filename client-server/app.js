@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ extended: false, limit: '50mb' }));
+app.use(express.urlencoded({ extended: false, limit: '50mb' })); //limite img
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
